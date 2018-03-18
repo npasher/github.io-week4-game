@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+    
+    <title>Krystal Kollector</title>
+  </head>
+  <body>
+      <header>
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+             <p class="navbar-brand"><h1>Krystal Kollector</h1></p>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+             </div>
+         </nav>
+      </div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="instruction">
+              <hr>
+              <h2>You shall receive a random number at the start of your turn.
+              Select one of the four below. Once you click on the you will generate points, which will be added to your total score.
+              Hit the value of the random number and you win! Going over the number will result in a loss.
+              The values of each will change with each new turn.
+              </h2>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+          <div class="col-md-4">
+            <h4>NUMBER: <span id="target"></span></h4>
+          </div>
+          <div class="col-md-4">
+              <h4>WINS: <span id="wins"></span></h4>
+              <h4>LOSSES: <span id="losses"></span></h4>
+            </div>
+          <div class="col-md-4">
+              <h4>CURRENT TOTAL: <span id="score-current"></span></h4>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="crystal" id="tweed" value="">
+              <img src="./assets/images/tweed_@2X.png" alt="TWEED">
+            </button>
+            <button class="crystal" id="green">
+              <img src="./assets/images/green_dust_scratch_@2X.png" alt="GREEN">
+            </button>
+            <button class="crystal" id="grey">
+              <img src="./assets/images/mirrored_squares_@2X.png" alt="GREY">
+            </button>
+            <button class="crystal" id="yellow">
+              <img src="./assets/images/halftone-yellow.jpg" alt="YELLOW">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           <p class="navbar-brand"><h6>&copy;2018 Nehal P. Asher</h6></p>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+           </div>
+       </nav>
+    </div>
+    </footer>
+
+  </body>
+
+  <script src="assets/javascript/game.js"></script>
+
+</html>
