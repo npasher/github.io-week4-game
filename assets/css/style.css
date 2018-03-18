@@ -1,7 +1,6 @@
 body{
   background-image:url("../images/dirty_old_shirt_@2X.png");
   color:orangered;
-  background-color:transparent;
   font-family:cursive, sans-serif;
   text-align:center;
   border:0;
@@ -14,14 +13,8 @@ img{
   width:215px;
   height:215px;
 }
-.crystal{
+.crystal, .pause{
   background-color:transparent;
+  color:blue;
   border:0;
 }
-footer{
-  flex-shrink:0;
-  color:black;
-  }
-.bg-dark{
-  background-color:transparent !important;
-  }

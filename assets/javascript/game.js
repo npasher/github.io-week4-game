@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  var audioElement=document.createElement("audio");
+        audioElement.setAttribute("src", "assets/audio/8BallAitken_CycloneCountry.mp3");
+
+  $(".crystal").click(function(){
+        audioElement.play();
+        });
+  $(".pause").click(function(){
+        audioElement.pause();
+        });
+
   var randomNum=Math.floor(Math.random()*102)+19;
   $("#target").html(randomNum);
 
