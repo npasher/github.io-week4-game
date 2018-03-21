@@ -1,15 +1,11 @@
 $(document).ready(function() {
   /*assigns audio to button press*/
   var audioElement=document.createElement("audio");
-        audioElement.setAttribute("src", "assets/audio/8BallAitken_CycloneCountry.mp3");
+        audioElement.setAttribute("src", "assets/audio/zapsplat_tech.mp3");
   /*audio on button press*/
   $(".crystal").click(function(){
         audioElement.play();
         });
-  $(".pause").click(function(){
-        audioElement.pause();
-        });
-
 /*assigns variable random number generator*/
   var randomNum=Math.floor(Math.random()*102)+19;
   $("#target").html(randomNum);
@@ -62,7 +58,6 @@ $(document).ready(function() {
       greenVal= $("#green").val();
       greyVal= $("#grey").val();
       yellowVal= $("#yellow").val();
-
     }
 /*win function*/
     if(currentScore === randomNum){
@@ -87,7 +82,6 @@ $(document).ready(function() {
       greenVal= $("#green").val();
       greyVal= $("#grey").val();
       yellowVal= $("#yellow").val();
-
     }
   });
   });
